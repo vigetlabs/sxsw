@@ -7,7 +7,7 @@ void setup() {
 void loop() {
   int buttonState = digitalRead(buttonPin);
 
-  if (buttonState == LOW) {
+  if (buttonState == HIGH) {
     Particle.publish("buttonPressed");
     delay(5000);
   }
