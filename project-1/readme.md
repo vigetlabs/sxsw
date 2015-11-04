@@ -1,6 +1,6 @@
-## Project 1 - Making an Internet Button
+## Project 1 - Internet Button
 
-In this project we'll use the Particle Photon and a button to trigger internet actions.
+In this project we'll use the Particle Photon, a button, and Particle Event publishing to trigger internet actions.
 
 #### Key Concepts/Components
 - **void setup():** all Arduino code must have a setup function defined. This gets run once when the system boots up.
@@ -11,7 +11,7 @@ In this project we'll use the Particle Photon and a button to trigger internet a
 
 - **digitalRead:** takes a digital (binary) reading from the specified pin. This will return `HIGH` or `LOW`.
 
-- **Particle.publish:** Publishes an event to the internet within the Particle ecosystem. This is what we'll use with IFTTT to make the magic happen.
+- **Particle.publish():** Publishes an event to the internet within the Particle ecosystem. This is what we'll use with IFTTT to make the magic happen.
 
 - **delay:** pause the program for the specified number of milliseconds, useful here so the button press is only registered once instead of as many times as the program loop cycles through while the button is pressed.
 
