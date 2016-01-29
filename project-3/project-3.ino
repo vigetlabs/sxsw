@@ -12,14 +12,14 @@ Adafruit_NeoPixel led = Adafruit_NeoPixel(PIXEL_COUNT, PIXEL_PIN, PIXEL_TYPE);
 void setup() {
   pinMode(BUTTON_PIN, INPUT);
   led.begin();
-  Particle.subscribe("duke-team-42", blinkLight);
+  Particle.subscribe("sxsw-team-42", blinkLight);
 }
 
 void loop() {
   int buttonState = digitalRead(BUTTON_PIN);
 
   if (buttonState == HIGH) {
-    Particle.publish("duke-team-42", "green");
+    Particle.publish("sxsw-team-42", "green");
     delay(2000);
   }
 }
