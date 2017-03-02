@@ -14,3 +14,5 @@ In this project we'll use the Particle Photon, a button, and an LED.
 - **digitalWrite:** writes out a digital signal to the specified pin.
 
 #### Component Layout
+
+![button-led](https://cloud.githubusercontent.com/assets/1410181/23530465/04ecedac-ff5f-11e6-8871-b9ea5cee8b71.png)
