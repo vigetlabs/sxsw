@@ -7,7 +7,7 @@ void setup() {
   pinMode(buttonPin, INPUT);
   pinMode(ledPin, OUTPUT);
 
-  Particle.function("setBrightness", setBrightness);
+  Particle.function("brightness", setBrightness);
 }
 
 int setBrightness(String command) {
