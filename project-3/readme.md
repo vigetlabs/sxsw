@@ -1,21 +1,28 @@
-## Project 3 - Communicating Devices
+## Project 3 - Internet Controlled LED
 
-In this project, we'll use both ends of the Particle event system - publishing and subscribing - in order to build devices which talk to each other.
-
-#### Requirements
-
-This project includes using multiple devices, so you'll need to grab a partner or two. You'll also need to pull in the Neopixel library again like in Project 2.
-
-You'll notice that the code subscribes and publishes to the `"sxsw-team-42"` event. Your group will need to change the number (or the entire string) to something unique so that you're only responding to each other's published events.
-
-*Note 1: Your code will respond to your own published events if you've subscribed to the same event name that you're publishing to. If you'd like, publish and subscribe to different event names (as long as they inversely match up your partner's) so you only effect change on other devices.*
-
-*Note 2: I'd suggest everyone in your group change the color in the line `Particle.publish("sxsw-team-42", "green");` so that it's easy to tell who's publishing events when.*
+In this project, we'll define a Particle function which can be triggered from the internet (using IFTTT).
 
 #### Key Concepts/Components
 
-- **Particle.subscribe("name", function) :** Subscribe to Particle events. You must pass in the `"name"` of the event, and a `function` to run when the event is published.
+- **Particle.function("name", function) :** Lets you define a function that can be triggered from the internet. You pass in a `"name"` (used to trigger the function from the web) and a `function` (defines what function is called when this is triggered).
+
+- **int setBrightness(String command) :** Defines a function when returns an `int` (integer). Functions that are registered with the `Particle.function` call must be of type `int`.
+
+- **atoi(command) :** Converts a string to an integer. eg: atoi("42") returns the integer 42.
+
+- **analogWrite:** Sends an analog signal (0 to 255) instead of a digital signal. Useful for controlling components which are not simply on/off, in this instance it controls the brightness of the LED.
+
+- **`brightness` variable:** You'll notice that there's a `brightness` variable defined at the top of the file. Since it's defined outside of any function, it's available to all functions (it's a global variable). We'll use IFTTT to change this, and the loop will just display whatever the brightness is set to.
 
 #### Component Layout
 
-![fritzing-diagram](https://s3.amazonaws.com/vigesharing-is-vigecaring/jsinichko/1804ytbai.jpg)
+
+#### Additional Steps
+
+First, push the code for this project to the Photon, then set up another IFTTT Applet in order for this project to work.
+
+- The "this" trigger will be SMS this time so you can send commands from your phone.
+  - Choose "Send IFTTT any SMS"
+- Connect the "that" action to Particle
+  - Choose "Call a function"
+  - The `setBrightness` function should be an option to choose from in IFTTT. If it's not make sure you've pushed the latest code and try again.
