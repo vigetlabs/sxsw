@@ -16,6 +16,7 @@ In this project, we'll define a Particle function which can be triggered from th
 
 #### Component Layout
 
+![button-led](https://cloud.githubusercontent.com/assets/1410181/23530465/04ecedac-ff5f-11e6-8871-b9ea5cee8b71.png)
 
 #### Additional Steps
 
