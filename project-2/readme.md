@@ -10,6 +10,8 @@ In this project, we'll use the Photon, a button, and Particle Event publishing t
 
 #### Component Layout
 
+![button-led](https://cloud.githubusercontent.com/assets/1410181/23530465/04ecedac-ff5f-11e6-8871-b9ea5cee8b71.png)
+
 #### Additional Steps
 
 In order for this project to work, you'll need to set up an IFTTT "Applet".
