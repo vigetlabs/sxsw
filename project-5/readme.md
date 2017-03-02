@@ -19,3 +19,7 @@ Note 1: Your code will respond to your own published events if you've subscribed
 #### Component Layout
 
 ![button-led-sensor](https://cloud.githubusercontent.com/assets/1410181/23530485/1c010e42-ff5f-11e6-98a9-d13cab523d78.png)
+
+#### Additional Steps
+
+Once everything is set up and working, you should be able to see a stream of events being published at [https://console.particle.io/logs](https://console.particle.io/logs).
