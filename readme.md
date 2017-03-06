@@ -3,6 +3,7 @@
 > Brought to you by Viget
 
 
+- [Project 0](https://github.com/vigetlabs/sxsw/tree/master/project-0) - Hello World!
 - [Project 1](https://github.com/vigetlabs/sxsw/tree/master/project-1) - Simple Components
 - [Project 2](https://github.com/vigetlabs/sxsw/tree/master/project-2) - Internet Button
 - [Project 3](https://github.com/vigetlabs/sxsw/tree/master/project-3) - Internet Controlled LED
