@@ -22,4 +22,10 @@ Note 1: Your code will respond to your own published events if you've subscribed
 
 #### Additional Steps
 
-Once everything is set up and working, you should be able to see a stream of events being published at [https://console.particle.io/logs](https://console.particle.io/logs).
+Once everything is set up and working, you should be able to see a stream of events being published at [https://console.particle.io/logs](https://console.particle.io/logs). This is helpful for debugging, and seeing how quickly Particle is registering your events.
+
+#### Challenge
+
+- Take control of the on board LED that indicates the device's status and make use of that to respond to events. Some various thoughts:
+  - Give everyone in your group a different color to display when they broadcast their unique event.
+  - Map the value of the sensor to the RGB value in the rainbow.

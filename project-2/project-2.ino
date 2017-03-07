@@ -9,6 +9,6 @@ void loop() {
 
   if (buttonState == HIGH) {
     Particle.publish("buttonPressed");
-    delay(2000);
+    delay(1000);
   }
 }

@@ -9,3 +9,7 @@ The code is a little more complex in this project, but there aren't any new conc
 #### Component Layout
 
 ![button-led-sensor](https://cloud.githubusercontent.com/assets/1410181/23530485/1c010e42-ff5f-11e6-98a9-d13cab523d78.png)
+
+#### Challenge:
+
+- Turn this sensor/LED combo into a night light!

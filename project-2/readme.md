@@ -19,3 +19,11 @@ In order for this project to work, you'll need to set up an IFTTT "Applet".
   - The "Event Name" should be `buttonPressed`.
   - You can leave "Event Contents" blank.
 - Connect the "that" action to SMS and hook it up to your phone number.
+
+#### Additional Steps
+
+Once everything is set up and working, you should be able to see a stream of events being published at [https://console.particle.io/logs](https://console.particle.io/logs). This is helpful for debugging, and seeing how quickly Particle is registering your events.
+
+#### Challenge
+
+- Keep track of how many times you've clicked the button and figure out how to send that data in the text message.
