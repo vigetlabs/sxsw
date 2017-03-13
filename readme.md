@@ -17,3 +17,7 @@
 - [Supported Particle API Clients](https://docs.particle.io/reference/community/)
   - [ParticleJS](https://docs.particle.io/reference/javascript/)
   - [particlerb](https://github.com/monkbroc/particlerb)
+  
+  ### Device List
+  
+  - [LIST](https://docs.google.com/spreadsheets/d/1vFNBQWfDjLMJQMH96XRiEaVBdJ17mFNc9EkICmHOUEw/edit#gid=0)
