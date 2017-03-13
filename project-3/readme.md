@@ -26,4 +26,4 @@ First, push the code for this project to the Photon, then set up another IFTTT A
   - Choose "Send IFTTT any SMS"
 - Connect the "that" action to Particle
   - Choose "Call a function"
-  - The `setBrightness` function should be an option to choose from in IFTTT. If it's not make sure you've pushed the latest code and try again.
+  - The `brightness` function should be an option to choose from in IFTTT. If it's not make sure you've pushed the latest code and try again.

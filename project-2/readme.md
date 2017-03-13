@@ -27,3 +27,4 @@ Once everything is set up and working, you should be able to see a stream of eve
 #### Challenge
 
 - Keep track of how many times you've clicked the button and figure out how to send that data in the text message.
+  - Note, you can only publish Particle events with string data. You can convert integers to strings with the `String()` function: https://docs.particle.io/reference/firmware/photon/#string-

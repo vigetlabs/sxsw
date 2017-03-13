@@ -27,5 +27,6 @@ Once everything is set up and working, you should be able to see a stream of eve
 #### Challenge
 
 - Take control of the on board LED that indicates the device's status and make use of that to respond to events. Some various thoughts:
+  - Particle has a built-in LEDStatus class to help with this: https://docs.particle.io/reference/firmware/photon/#ledstatus-class
   - Give everyone in your group a different color to display when they broadcast their unique event.
   - Map the value of the sensor to the RGB value in the rainbow.

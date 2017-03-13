@@ -12,4 +12,4 @@ The code is a little more complex in this project, but there aren't any new conc
 
 #### Challenge:
 
-- Turn this sensor/LED combo into a night light!
+- Turn this sensor/LED combo into a night light! Make the light brighter when the sensor reads dim light.
