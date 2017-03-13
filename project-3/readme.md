@@ -30,4 +30,4 @@ First, push the code for this project to the Photon, then set up another IFTTT A
   
 #### Challenge
 
-- If you are familiar with the termainal use CURL to make a Particle function call. Reference ![Particle Docs](https://docs.particle.io/reference/api/) for help.
+- If you are familiar with the terminal use CURL to make a Particle function call. Reference ![Particle Docs](https://docs.particle.io/reference/api/) for help.
