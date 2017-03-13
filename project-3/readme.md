@@ -27,3 +27,7 @@ First, push the code for this project to the Photon, then set up another IFTTT A
 - Connect the "that" action to Particle
   - Choose "Call a function"
   - The `brightness` function should be an option to choose from in IFTTT. If it's not make sure you've pushed the latest code and try again.
+  
+#### Challenge
+
+- If you are familiar with the termainal use CURL to make a Particle function call. Reference ![Particle Docs](https://docs.particle.io/reference/api/) for help.
