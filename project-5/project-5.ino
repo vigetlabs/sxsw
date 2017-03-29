@@ -21,7 +21,8 @@ void loop() {
   int buttonState = digitalRead(buttonPin);
   int brightness = analogRead(sensorPin);
   adjustMinMax(brightness);
-  int mappedValue = mapValue(brightness);
+
+  int mappedValue = map(brightness, brightnessMin, brightnessMax, 0, 255);
 
   if (buttonState == HIGH) {
     Particle.publish("sxsw-team-42", String(mappedValue));
@@ -31,6 +32,8 @@ void loop() {
   analogWrite(ledPin, teamBrightness);
 }
 
+// Keep track of lowest low reading and highest high reading
+// Probably don't want to mess with this.
 void adjustMinMax(int brightness) {
   if (brightness > brightnessMax) {
     brightnessMax = brightness;
@@ -38,14 +41,5 @@ void adjustMinMax(int brightness) {
 
   if (brightness < brightnessMin) {
     brightnessMin = brightness;
-  }
-}
-
-int mapValue(int brightness) {
-  if (brightnessMax > brightnessMin) {
-    // maps the brightness from the measured min-max to the 0-255 LED scale
-    return ((brightness - brightnessMin) * 255) / (brightnessMax - brightnessMin);
-  } else {
-    return brightness;
   }
 }
