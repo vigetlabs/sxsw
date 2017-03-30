@@ -28,8 +28,6 @@ void loop() {
     int mappedValue = map(brightness, brightnessMin, brightnessMax, 0, 255);
   }
 
-  analogWrite(ledPin, mappedValue);
-
   if (buttonState == HIGH) {
     Particle.publish("sxsw-team-42", String(mappedValue));
     delay(1000);
