@@ -18,8 +18,10 @@ void loop() {
   if (buttonState == HIGH) {
     digitalWrite(ledPin, HIGH);
   } else {
-    int mappedValue = map(brightness, brightnessMin, brightnessMax, 0, 255);
-    analogWrite(ledPin, mappedValue);
+    if (brightnessMin != brightnessMax) {
+      int mappedValue = map(brightness, brightnessMin, brightnessMax, 0, 255);
+      analogWrite(ledPin, mappedValue);
+    }
   }
 }
 
