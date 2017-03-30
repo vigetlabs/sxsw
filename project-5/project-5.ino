@@ -25,7 +25,7 @@ void loop() {
   int mappedValue = 0;
 
   if (brightnessMin != brightnessMax) {
-    int mappedValue = map(brightness, brightnessMin, brightnessMax, 0, 255);
+    mappedValue = map(brightness, brightnessMin, brightnessMax, 0, 255);
   }
 
   if (buttonState == HIGH) {
