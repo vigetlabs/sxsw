@@ -22,7 +22,12 @@ void loop() {
   int brightness = analogRead(sensorPin);
   adjustMinMax(brightness);
 
-  int mappedValue = map(brightness, brightnessMin, brightnessMax, 0, 255);
+  if (brightnessMin != brightnessMax) {
+    int mappedValue = map(brightness, brightnessMin, brightnessMax, 0, 255);
+    analogWrite(ledPin, mappedValue);
+  } else {
+    int mappedValue = 0;
+  }
 
   if (buttonState == HIGH) {
     Particle.publish("sxsw-team-42", String(mappedValue));
